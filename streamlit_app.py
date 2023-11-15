@@ -7,10 +7,10 @@ import target_predictions
 DEFAULT_COMPOUND = "CHEMBL141739"
 
 if "molfile" not in st.session_state:
-    st.session_state.molfile = None
+    st.session_state['molfile'] = None
 
 if "chembl_id" not in st.session_state:
-    st.session_state.chembl_id = DEFAULT_COMPOUND
+    st.session_state['chembl_id'] = DEFAULT_COMPOUND
 
 st.set_page_config(layout="wide")
 st.subheader("🧪 Molecule editor")
